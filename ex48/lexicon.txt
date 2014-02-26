@@ -1,0 +1,21 @@
+create lexicon of words for use in text based game
+
+direction words: north, south, east, west, up, down, left, right, back
+verbs: go, stop, kill, eat
+stop words: the, in, of, from, at, it
+nouns: door, bear, princess, cabinet
+numbers: any str of 0 through 9 chars
+
+use:
+    stuff = raw_input("> ")
+    words = stuff.split()
+
+to break down commands
+
+take each word and put into tuple pairs eg: (direction, north) (verb, go)
+
+1st_word = 1st tuple
+2nd_word = 2nd tuple
+
+Write a scanner to take string of raw input and return sentence composed of tuples.
+Also have an error category to print when user enters unrecognised words
